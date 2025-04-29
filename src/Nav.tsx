@@ -2,17 +2,22 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="portfolio">About</Link>
+    <nav className="my-12">
+      <ul className="flex flex-wrap">
+        <li className="w-full py-3 uppercase">
+        <a href="#about">About</a>
         </li>
-        <li>
-          <Link to="/portfolio/projects">Projects</Link>
+        <li className="w-full py-3 uppercase">
+        <a href="#experience">Experience</a>
         </li>
-        <li>
-          <Link to="/portfolio/contact">Contact</Link>
+        <li className="w-full py-3 uppercase">
+        <a href="#education">Education</a>
         </li>
+        <li className="w-full py-3 uppercase">
+        <a href="#projects">Projects</a>
+        </li>
+     
+
       </ul>
     </nav>
   );
