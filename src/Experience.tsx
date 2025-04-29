@@ -4,12 +4,12 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className=" scroll-mt-24">
       <div className="mb-24">
         {experienceData.experiences.map((experience, index) => (
           <div
             key={index}
-            className="grid grid-cols-8 gap-4 my-8 rounded-lg p-8 flex flex-wrap hover:bg-purple-300/10 hover:shadow-white"
+            className="grid grid-cols-8 gap-4 my-8 rounded-lg p-8 flex flex-wrap hover:bg-purple-50/5 hover:shadow-white  rounded-md transition motion-reduce:transition-none  hover:drop-shadow-lg"
           >
             <span className="col-span-2">{experience.date}</span>
             <div className="col-span-6">
