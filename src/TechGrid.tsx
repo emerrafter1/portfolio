@@ -53,7 +53,8 @@ const techStack: Tech[] = [
 
 const TechGrid: React.FC = () => (
   <div className=" flex items-center justify-center">
-    <div className="grid grid-cols-6 gap-x-6 gap-y-12 max-w-screen-xl">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4"
+    >
       {techStack.map((tech) => (
         <TechTile key={tech.label} icon={tech.icon} label={tech.label} />
       ))}

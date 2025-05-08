@@ -11,7 +11,7 @@ export type Project = {
   };
 
  export type Experience = {
-    bio: string;
+    bio: string[];
     technicalSkills: {
       languages: string;
       testing: string;

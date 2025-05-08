@@ -4,7 +4,6 @@ import "../dist/styles/output.css";
 import Header from "./Header";
 import About from "./About";
 import Experience from "./Experience";
-import Education from "./Education";
 import Projects from "./Projects";
 import Footer from "./Footer";
 
@@ -12,7 +11,7 @@ function App() {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const sectionIds = ["about", "experience", "education", "projects"];
+    const sectionIds = ["about", "experience", "projects"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -24,8 +23,8 @@ function App() {
         });
       },
       {
-        threshold: 0.4,
-        // Temporarily remove rootMargin and scroll-mt-24 to see if the issue persists
+        threshold: 0.25,
+  
         rootMargin: "0px 0px 0px 0px",
 
 
@@ -42,15 +41,15 @@ function App() {
   
 
   return (
-    <div className="grid grid-cols-12 gap-4 p-20 min-h-screen bg-slate-900 text-violet-100 scroll-smooth">
-      <div className="col-span-4 sticky top-24 self-start">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-2 sm:gap-4 sm:p-10 lg:p-20 min-h-screen bg-slate-900 text-violet-100 scroll-smooth">
+      <div className="col-span-12 md:col-span-4 md:sticky md:top-24 self-start">
         <Header activeSection={activeSection} />
       </div>
 
-      <div className="col-span-8 mx-20">
+      <div className="col-span-12 md:col-span-8 mx-8 md:mx-8 lg:mx-20">
         <About />
         <Experience />
-        <Education />
+
         <Projects />
         <Footer />
       </div>

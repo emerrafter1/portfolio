@@ -1,7 +1,8 @@
 import type { Experience } from "../types";
 
 export const experienceData: Experience = {
-  bio: "Senior QA Engineer turned Software Developer with 5 years of experience in manual and automated testing. Recently completed a full-time Software Development Bootcamp at Northcoders, where I built full-stack JavaScript applications using React, Node.js, and databases, with a strong focus on test-driven development. Skilled in Cypress, writing test cases, and building automation scripts, plus hands-on coding experience from the bootcamp. Now looking to apply my QA background and new development skills to build and ship high-quality software solutions.",
+  bio: ["Hi, I’m Emer — a Software Developer with a background in QA and engineering. I enjoy problem-solving and bring an engineering mindset to how I approach development.","I’m transitioning into a Software Developer role after completing a full-time bootcamp at Northcoders. I’ve built full-stack apps using React, Node.js, PostgreSQL and MySQL, and I work with test-driven development using tools like Cypress, Jest and Supertest.I’m comfortable in agile teams, pairing, reviewing code, and working with Git.","Previously, I spent five years in QA, working in manual and automated testing. I have experience with Cypress, Postman, TestRail, JIRA, and Confluence, and worked closely with product and design teams to deliver reliable software."]
+   ,
 
   technicalSkills: {
     languages:
