@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../dist/styles/output.css";
+import "../styles/output.css";
 
 import Header from "./Header";
 import About from "./About";
