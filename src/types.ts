@@ -4,7 +4,10 @@ export type Project = {
     name: string;
     description: string,
     frontend_stack: string[],
-    backend_stack: string[]
+    backend_stack: string[],
+    github_link_FE: string,
+    github_link_BE: string, 
+    img_url: string,
   };
 
  export type Experience = {
@@ -22,7 +25,8 @@ export type Project = {
       date: string;
       title: string;
       location: string;
-      description: string[];
+      description: string;
+      url: string;
     }[];
     education: Qualification[];
   };

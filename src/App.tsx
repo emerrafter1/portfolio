@@ -42,7 +42,7 @@ function App() {
   
 
   return (
-    <div className="grid grid-cols-12 gap-4 p-24 min-h-screen bg-slate-900 text-violet-100 scroll-smooth">
+    <div className="grid grid-cols-12 gap-4 p-20 min-h-screen bg-slate-900 text-violet-100 scroll-smooth">
       <div className="col-span-4 sticky top-24 self-start">
         <Header activeSection={activeSection} />
       </div>

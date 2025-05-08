@@ -1,4 +1,6 @@
 import { experienceData } from "./data/experience_data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Education = () => {
   return (
@@ -9,7 +11,7 @@ const Education = () => {
             {experienceData.education.map((item, i) => (
                 <li>
               <p>{item.qualification_title}</p>
-              <p>{item.provider}</p>
+              <p><FontAwesomeIcon className="mr-2" icon={faLocationDot} />{item.provider}</p>
               </li>
             ))}
           </ul>
