@@ -18,7 +18,7 @@ const Experience = () => {
               <h2 className="text-purple-300 text-lg font-medium w-full">
                 <span className="flex flex-wrap justify-between">
                   {experience.title}{" "}
-                  <a href={experience.url}>
+                  <a href={experience.url} aria-label={experience.location}>
                     <FaExternalLinkAlt className="sm:opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xl" />
                   </a>
                 </span>

@@ -37,10 +37,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
       </nav>
 
       <div className=" mt-12 sm:mt-32 flex gap-4">
-        <a href="https://www.linkedin.com/in/emerrafter/">
+        <a href="https://www.linkedin.com/in/emerrafter/" aria-label="Link to Emer's LinkedIn profile">
           <SiLinkedin className="w-7 h-7 sm:w-8 sm:h-8 text-purple-300 text-opacity-60 hover:text-opacity-100 hover:cursor-pointer" />
         </a>
-        <a href="https://github.com/emerrafter1">
+        <a href="https://github.com/emerrafter1" aria-label="Link to Emer's Github">
           <SiGithub className="w-7 h-7 sm:w-8 sm:h-8 text-purple-300 text-opacity-60 hover:text-opacity-100 hover:cursor-pointer" />
         </a>
         <a href="mailto:emerlouiserafter@gmail.com" aria-label="Email Emer">
