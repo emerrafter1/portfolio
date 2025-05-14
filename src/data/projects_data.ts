@@ -37,7 +37,7 @@ const projectsData: Project[] = [
     name: "News App Backend",
     description: "A RESTful api for a content sharing news app where users can read, post and react to articles through comments and votes. The backend follows an MVC architecture and was developed using a test-driven (TDD) approach",
     frontend_stack: [],
-    backend_stack: ["JavaScript", "PostgreSQL", "Express", "Jest", "Supertest"],
+    backend_stack: ["JavaScript", "PostgreSQL", "Express", "Jest", "Supertest", "GitHub Actions"],
     github_link_FE: "",
     github_link_BE: "https://github.com/emerrafter1/nc-news",
      img_url: ncNewsBeImg
