@@ -713,6 +713,10 @@ html, body, #root {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -757,10 +761,6 @@ html, body, #root {
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-4 {
@@ -865,9 +865,7 @@ html, body, #root {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -952,6 +950,10 @@ nav ul {
 
 .hover\:text-opacity-100:hover {
   --tw-text-opacity: 1;
+}
+
+.hover\:\!opacity-100:hover {
+  opacity: 1 !important;
 }
 
 .hover\:opacity-100:hover {
@@ -1056,12 +1058,20 @@ nav ul {
     opacity: 0;
   }
 
+  .sm\:opacity-100 {
+    opacity: 1;
+  }
+
   .sm\:opacity-20 {
     opacity: 0.2;
   }
 
   .sm\:hover\:bg-purple-50\/5:hover {
     background-color: rgb(250 245 255 / 0.05);
+  }
+
+  .group\/section:hover .sm\:group-hover\/section\:opacity-20 {
+    opacity: 0.2;
   }
 }
 

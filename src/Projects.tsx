@@ -2,12 +2,16 @@ import projectsData from "./data/projects_data";
 import ProjectCard from "./ProjectCard";
 import type {Project} from "./types";
 
-const Projects = () => {
-  return (
-    <section id="projects" className="scroll-mt-24 mb-24 ">
+type ProjectsProps = {
+  activeSection: string;
+};
 
-      {projectsData.map((project: Project) => (
-        <ProjectCard key={project.id} project={project} />
+const Projects = ({ activeSection }: ProjectsProps) => {
+  return (
+    <section id="projects" className="scroll-mt-24 mb-24 group/section">
+
+      {projectsData.map((project: Project, index: number) => (
+        <ProjectCard key={project.id} project={project} isFirstActive={index === 0 && activeSection === "projects"} />
       ))}
     </section>
   );

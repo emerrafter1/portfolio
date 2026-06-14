@@ -1,16 +1,17 @@
 type HeaderProps = {
   activeSection: string;
+  onNavClick: (id: string) => void;
 };
 
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { MdEmail } from 'react-icons/md';
 
 
-const Header: React.FC<HeaderProps> = ({ activeSection }) => {
+const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
   const navItems = [
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
-
+    { id: "education", label: "Education & Development" },
     { id: "projects", label: "Projects" },
   ];
 
@@ -25,6 +26,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
             <li key={id} className="uppercase w-full">
               <a
                 href={`#${id}`}
+                onClick={() => onNavClick(id)}
                 className={`transition-colors duration-300 ${
                   activeSection === id ? "text-violet-400 font-bold" : "text-violet-200"
                 }`}

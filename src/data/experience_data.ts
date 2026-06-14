@@ -1,26 +1,33 @@
 import type { Experience } from "../types";
 
 export const experienceData: Experience = {
-  bio: ["Hi, I’m Emer — a Software Developer with a background in QA and engineering. I enjoy problem-solving and bring an engineering mindset to how I approach development.","I’m transitioning into a Software Developer role after completing a full-time bootcamp at Northcoders. I’ve built full-stack apps using React, Node.js, PostgreSQL and MySQL, and I work with test-driven development using tools like Cypress, Jest and Supertest. I’m comfortable in agile teams, pairing, reviewing code, and working with Git.","Previously, I spent five years in QA, working in manual and automated testing. I have experience with Cypress, Postman, TestRail, JIRA, and Confluence, and worked closely with product and design teams to deliver reliable software."]
+  bio: ["Hi, I’m Emer - a Software Development Engineer at Gateway21, with a background in QA and engineering. I enjoy problem-solving and bring an engineering mindset to how I approach development.","I build full-stack features for financial promotion approvals and AI-assisted compliance workflows. I’ve worked across the stack using TypeScript, React, Next.js, Python, PostgreSQL, and AWS - building everything from serverless email pipelines to prompt management tooling and client-facing Slack integrations.","Before moving into development, I spent five years in QA across fintech and financial services, working in manual and automated testing with tools like Cypress, Postman, and TestRail, and collaborating closely with product and design teams to deliver reliable software."]
    ,
 
   technicalSkills: {
     languages:
-      "JavaScript, TypeScript, using Node.js and browsers as environment",
+      "JavaScript, TypeScript, Python, using Node.js and browsers as environment",
     testing:
       "TDD (Test Driven Development), Jest, Supertest, Cypress, Postman, TestRail",
     monitoringAndDebugging: "Google Cloud Logging and Logrocket",
-    backend: "MySql, PSQL, seeding",
-    frontend: "HTML, CSS, React, Lighthouse and other accessibility tools",
-    hosting: "Netlify, Render",
+    backend: "PostgreSQL, MySQL, Sequelize, Drizzle, seeding",
+    frontend: "HTML, CSS, React, Next.js, Lighthouse and other accessibility tools",
+    hosting: "Netlify, Render, AWS (Lambda, S3, SES)",
     projectManagementAndCollaboration:
       "JIRA, Agile, SCRUM, Kanban, Confluence, Trello",
   },
 
   experiences: [
     {
+      date: "Jun 2025 - Present",
+      title: "Software Development Engineer",
+      location: "Gateway21, London",
+      description: "Build and maintain full-stack features for financial promotion approvals and AI-assisted compliance workflows using TypeScript, React, Next.js, Python, PostgreSQL, and AWS. Built a serverless email ingestion service using AWS SES, Lambda, S3, and PostgreSQL to automate how inbound client emails and attachments enter Gateway21's internal review process, including spam checks, validation, and failure alerting. Built an internal prompt management tool giving non-technical compliance and operations teams control over prompts used in AI workflows - with versioning, approval states, edit history, role-based access, and production/draft workflows. Developed a prompt evaluation pipeline supporting human review, pass/fail thresholds, and golden datasets, allowing teams to test prompt performance before release. Built a client-facing Slack app using TypeScript, AWS Lambda, S3, and the Slack API to let clients submit financial promotion materials directly into the Gateway21 portal from Slack. Currently building an admissions and disclosure platform for crypto clients using TypeScript, Next.js, PostgreSQL, Drizzle, and AWS.",
+      url: "https://www.gateway21.com/"
+    },
+    {
       date: "Jan 2025 - Apr 2025",
-      title: "Northcoders Software Development Bootcamp in JavaScript",
+      title: "Northcoders Software Development Bootcamp in ",
       location: "",
       description: 
         "Completed a 13-week full-stack JavaScript bootcamp at Northcoders, gaining hands-on experience in software development. Built and deployed full-stack applications using React, Node.js, and databases, with a focus on test-driven development and agile methodologies. Worked in a team using Git, pair programming, and problem-solving to deliver a real-world project.",
@@ -67,19 +74,39 @@ export const experienceData: Experience = {
     },
   ],
 
+  professionalDevelopment: [
+    {
+      qualification_title: "AWS Certified Cloud Practitioner (CLF-C02)",
+      provider: "Amazon Web Services",
+      date: "2026",
+    },
+    {
+      qualification_title: "Northcoders JavaScript Bootcamp",
+      provider: "Northcoders",
+      date: "Jan 2025 - Apr 2025",
+    },
+    {
+      qualification_title: "Professional Diploma, UX Design",
+      provider: "UX Design Institute",
+      date: "2021 - 2022",
+    },
+  ],
+
   education: [
     {
       qualification_title: "M.A.I Biomedical Engineering",
       provider: "Trinity College Dublin",
+      date: "2018 - 2019",
     },
     {
-        qualification_title: "B.A.I Biomedical Engineering",
+      qualification_title: "B.A.I Biomedical Engineering",
       provider: "Trinity College Dublin",
+      date: "2014 - 2018",
     },
-    { qualification_title: "B.A Mathematics", provider: "Trinity College Dublin" },
     {
-        qualification_title: "Professional Diploma, UX Design",
-      provider: "UX Design Institute",
+      qualification_title: "B.A Mathematics",
+      provider: "Trinity College Dublin",
+      date: "2014 - 2018",
     },
   ],
 };

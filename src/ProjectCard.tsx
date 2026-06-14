@@ -4,11 +4,12 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 type ProjectCardProps = {
   project: Project;
+  isFirstActive?: boolean;
 };
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, isFirstActive }: ProjectCardProps) => {
   return (
-    <div className="my-2 mb-24 rounded-lg flex flex-wrap bg-purple-50/5 sm:bg-slate-900 sm:hover:bg-purple-50/5 hover:shadow-purple-200 sm:opacity-20 hover:opacity-100 rounded-md transition motion-reduce:transition-none hover:drop-shadow-lg group">
+    <div className={`my-2 mb-24 rounded-lg flex flex-wrap bg-purple-50/5 sm:bg-slate-900 sm:hover:bg-purple-50/5 hover:shadow-purple-200 ${isFirstActive ? "sm:opacity-100 sm:group-hover/section:opacity-20 hover:!opacity-100" : "sm:opacity-20 hover:opacity-100"} rounded-md transition motion-reduce:transition-none hover:drop-shadow-lg group`}>
       <img src={project.img_url} alt={project.name} className="rounded-lg p-4 "/>
       <div className="p-4 flex gap-4 flex-wrap">
       <h2
