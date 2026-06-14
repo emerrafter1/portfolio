@@ -28,13 +28,14 @@ export type Project = {
       description: string;
       url: string;
     }[];
+    professionalDevelopment: Qualification[];
     education: Qualification[];
   };
 
   type Qualification = {
     qualification_title: string;
     provider: string;
-
+    date?: string;
   }
   
 

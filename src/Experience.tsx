@@ -2,17 +2,23 @@ import { experienceData } from "./data/experience_data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import cv from "../public/EmerRafter_CV.pdf";
+import cv from "../public/EmerRafter_CV_June26.pdf";
 
-const Experience = () => {
+type ExperienceProps = {
+  activeSection: string;
+};
+
+const Experience = ({ activeSection }: ExperienceProps) => {
   return (
     <section id="experience" className=" scroll-mt-24">
-      <div className="mb-12">
-        {experienceData.experiences.map((experience, index) => (
+      <div className="mb-12 group/section">
+        {experienceData.experiences.map((experience, index) => {
+          const isFirstActive = index === 0 && activeSection === "experience";
+          return (
           <div
             key={index}
-            className="grid grid-cols-8 gap-4 my-8 rounded-lg sm:p-1 lg:p-4  flex flex-wrap hover:bg-purple-50/5 hover:shadow-purple-200 sm:opacity-20 hover:opacity-100
-  rounded-md transition motion-reduce:transition-none  hover:drop-shadow-lg group"
+            className={`grid grid-cols-8 gap-4 my-8 rounded-lg sm:p-1 lg:p-4  flex flex-wrap hover:bg-purple-50/5 hover:shadow-purple-200 ${isFirstActive ? "sm:opacity-100 sm:group-hover/section:opacity-20 hover:!opacity-100" : "sm:opacity-20 hover:opacity-100"}
+  rounded-md transition motion-reduce:transition-none  hover:drop-shadow-lg group`}
           >
             <div className="col-span-8 flex flex-wrap gap-2">
               <h2 className="text-purple-300 text-lg font-medium w-full">
@@ -35,7 +41,8 @@ const Experience = () => {
               <p>{experience.description}</p>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
       <div className="flex flex-wrap w-full gap-2 text-purple-300 mb-12  sm:p-4">
       <a href={cv} target="_blank" rel="noopener noreferrer">
